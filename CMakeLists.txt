@@ -6,3 +6,5 @@ project(
     github-actions-cmake-example
     DESCRIPTION "GitHub Action CMake example"
     LANGUAGES CXX)
+
+add_subdirectory(src)
