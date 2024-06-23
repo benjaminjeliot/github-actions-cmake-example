@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/benjaminjeliot/docker-ubuntu-dev
+      credentials:
+        username: ${{ github.repository_owner }}
+        password: ${{ secrets.ghcr_password }}
 
     steps:
     - uses: actions/checkout@v4
