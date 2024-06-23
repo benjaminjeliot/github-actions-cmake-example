@@ -10,6 +10,10 @@ project(
 # Options
 option(ENABLE_TEST "Enable tests" ON)
 
+if(ENABLE_TEST)
+  enable_testing()
+endif()
+
 add_subdirectory(src)
 
 if(ENABLE_TEST)
