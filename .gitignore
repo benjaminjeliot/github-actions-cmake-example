@@ -1,1 +1,4 @@
 /build/
+/googletest/
+/googletest-build/
+/gtest/
