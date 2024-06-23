@@ -1,0 +1,12 @@
+---
+Checks: >
+    bugprone-*,
+    clang-diagnostic-*,
+    clang-analyzer-*,
+    cppcoreguidelines-*,
+    google-*,
+    modernize-*,
+    readability-*,
+    -bugprone-suspicious-include,
+    -cppcoreguidelines-owning-memory
+...
