@@ -19,10 +19,7 @@ jobs:
     # See: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/benjaminjeliot/docker-ubuntu-dev
-      credentials:
-        username: ${{ github.repository_owner }}
-        password: ${{ secrets.ghcr_password }}
+      image: ghcr.io/benjaminjeliot/docker-ubuntu-dev:main
 
     steps:
     - uses: actions/checkout@v4
